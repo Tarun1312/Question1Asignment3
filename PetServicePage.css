@@ -1,0 +1,130 @@
+body {
+  background-color: #f8f9fa; /* Bootstrap default background color */
+}
+
+.main-content {
+  background-color: #ffffff; /* Light background color for the main content */
+  padding: 2opx;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+}
+
+header h1 {
+  text-decoration: none;
+  color: #E8E8E8;
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+font-size:40px
+}
+
+h2 {
+  text-align:center ;
+  background-color: aqua;
+}
+header {
+  background-color:#0b090a;
+  color: #fff;
+  padding: 10px ;
+  text-align: center;
+position: sticky;
+  top: 0;
+  width: 100%;
+z-index: 1;
+}
+
+
+    nav ul {
+      list-style-type: none;
+      padding: 0px;
+      color: #9F9F9F;
+  }
+  
+  .un {
+    display: inline-block;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  
+  .un:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background:#9F9F9F;
+    transition: 300ms;
+  }
+  
+  .un:hover:after {
+    width: 100%;
+  }
+
+ 
+
+  #pet-services > div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.collapsible-set {
+    border: none; /* remove border from collapsible sets */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    border: none; /* remove border from grid container */
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.collapsible {
+    margin-bottom: 20px;
+}
+
+.collapsible-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.collapsible-content p {
+    margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+      position: static;
+      margin-bottom: 0;
+      border-radius: 0;
+      padding: 10px;
+  }
+
+  .main-content {
+      border-radius: 0;
+      padding: 10px;
+  }
+}
+
+
+
+
+
+  
+

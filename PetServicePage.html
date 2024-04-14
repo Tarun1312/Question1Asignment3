@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet service</title> 
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="PetServicePage.css">
+    
+</head>
+<body>
+    <header>
+        <h1><strong>Pet service</strong></h1>
+        <nav>
+            <ul>
+                <li class="un"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Pet Services Section -->
+            <section id="pet-services">
+                <div id="grooming">
+                    <h2>Grooming Services:</h2>
+                   
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <h3>Basic Grooming:</h3>
+                            <img src="bathing.jpeg" alt="Basic Grooming">
+                            <p>Bathing</p>
+                            <img src="brushing.jpg" alt="Basic Grooming">
+                            <p>Brushing</p>
+                            <img src="cuttingNail.jpeg" alt="Basic Grooming">
+                            <p>Nail trimming</p>
+                            <img src="earCleaning.jpeg" alt="Basic Grooming">
+                            <p>Ear cleaning</p> 
+                        </div>
+                        <div class="grid-item">
+                            <h3>Full Grooming:</h3>
+                            <img src="image2.jpg" alt="Basic Grooming">
+                            <p>Includes basic grooming plus haircut and styling.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="pets-hotel" class="collapsible">
+                    <h2>Pets Hotel</h2>
+                    <button class="collapsible-btn">View Available Rooms</button>
+                    <div class="collapsible-content">
+                        <p>Our Pets Hotel offers comfortable rooms for your furry friends. Each room is equipped with cozy bedding and toys.</p>
+                        <p>Contact us for booking and availability.</p>
+                    </div>
+                </div>
+
+                <div id="day-camp" class="collapsible-set">
+                    <h2>Pet Day Camp</h2>
+                    <div class="collapsible">
+                        <button class="collapsible-btn">Morning Session</button>
+                        <div class="collapsible-content">
+                            <p>Join us for fun activities and socialization in the morning session. Activities may include group walks, interactive games, and supervised playtime. Your pet will have a blast while making new friends!</p>
+                            <p>Morning Session Schedule:</p>
+                            <ul>
+                                <li>9:00 AM - 10:00 AM: Group playtime</li>
+                                <li>10:00 AM - 11:00 AM: Interactive games</li>
+                                <li>11:00 AM - 12:00 PM: Rest and relaxation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <button class="collapsible-btn">Afternoon Session</button>
+                        <div class="collapsible-content">
+                            <p>Enjoy playtime and exercises in the afternoon session. Our trained staff will engage your pet in various activities to keep them entertained and stimulated.</p>
+                            <p>Afternoon Session Schedule:</p>
+                            <ul>
+                                <li>1:00 PM - 2:00 PM: Agility training</li>
+                                <li>2:00 PM - 3:00 PM: Individual playtime</li>
+                                <li>3:00 PM - 4:00 PM: Snack time and socialization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Pet Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   
+    <script>
+        var collapsibles = document.querySelectorAll('.collapsible-btn');
+        collapsibles.forEach(function(collapsible) {
+            collapsible.addEventListener('click', function() {
+                var content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
